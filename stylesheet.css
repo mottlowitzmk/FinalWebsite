@@ -13,6 +13,7 @@
     background: #255C69;
     padding: 10px;
 }
+
 #footer {
     height: auto;
     padding: auto;
@@ -22,74 +23,38 @@
     background-color: #00bb00;
     padding: 20px 20px 20px 20px;
 }
-h1 {
-    color: #8D2F5D;
-    border-style: dotted
+
+
+#demo{
+
+  background-color: pink;
+  border-style: groove;
 }
-h2 {
-    color: #8D2F5D;
-    border-style: double;
+
+
+li .hi {
+    font-size: 25px;
+    background-color: white;
+    font-family: cursive;
+
+
 }
-hr.funky {
-    display: block;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 10px;
-    border-top: 10px solid #8D2F5D;
-    border-bottom: 10px solid #246D5F;
+
+  a:hover{ color: pink;}
+
+  .background-switch:hover {
+   background-color: lightblue;
+   color: white;
+   font-family: cursive;
+   font-stretch: extra-expanded;
 }
-ul.fun {
-    background: #8D2F5D;
-    padding: 20px;
-}
-div.column_25 {
-    float: left;
-    width: 50%;
-    margin: 0px;
-    padding: auto;
-    border: 0px solid #000;
-    background-color: #000;
-}
-div.column_26 {
-    float: left;
-    width: 50%;
-    margin: 0px;
-    padding: auto;
-    border: 0px solid #000;
-    background-color: #000;
-}
-div.content_plain {
-    padding: 10px;
-}
-div.content_fixed_height {
-    padding: 10px;
-    margin: 5px;
-    background-color: #ccd9ff;
-    height: 300px;
-}
-.icon {
-    padding: 5px;
-    height: 75px;
-    border-style: groove;
-}
-hr.funkier {
-    display: block;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 10px;
-    border-top: 10px solid #8D2F5D;
-    border-bottom: 10px solid #246D5F;
-}
-#love {
-    background-color: hotpink;
-}
-ul.a {
-    list-style-type: block;
-    background-color: #8D2F5D;
+
+
+.no{
+
+background-color: pink;
+border-style: groove;
+font-family: cursive;
+
+
 }
