@@ -5,21 +5,16 @@
     <title>Final Page</title>
        <!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-
+--><script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
   <script language="javascript" src="libraries/p5.dom.js"></script>
 
 
 
   <script language="javascript" src="libraries/p5.sound.js"></script>
-
-  <audio controls>
-    <source src="finalpageimages/DAYA.mp3" type="audio/mp3">
-  </audio>
 
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
 
@@ -30,8 +25,11 @@
 
   h1{
             padding-right: center;
-            padding-left: center;
+            padding-left: 500px;
             background-color: mistyrose;
+            font-family: cursive;
+            padding-top: 20px;
+
         }
 
         b{
@@ -39,10 +37,6 @@
 
         }
 
-        li{
-            list-style-image: url(cameralens2.png);
-
-        }
 
 
         i{
@@ -71,32 +65,32 @@
 </head>
 
 <body>
+<h1>
 
-  <div class="w3-container w3-pink">
-       <ul class="w3-nav w3-border w3-light-grey" style="height:175px">
-    <li><a class="w3-hover-pink" href="#">Home</a></li>
-    <li><a class="w3-hover-pink" href="#">Family</a></li>
-    <li><a class="w3-hover-pink" href="#">Friends</a></li>
-    <li><a class="w3-hover-pink" href="#">Hobbies</a></li>
+Welcome!
+</h1>
+  <div class="hi">
+       <ul>
+    <li><a class="hi" href="www.google.com">Home</a></li>
+    <p>
+    <li><a class="hi" href="www.google.com">Family</a></li>
+    <p>
+    <li><a class="hi" href="www.google.com">Friends</a></li>
+    <p>
+    <li><a class="hi" href="www.google.com">Hobbies</a></li>
 
   </ul>
 
 
   </div>
 
-      <div class="w3-container">
-
-    <button onclick="myFunction()" class="w3-btn">Click Me!</button>
-
 
     <p>  </p>
-    <p id="Demo" class="w3-hide w3-light-grey">I am a senior at Lake Forest College and am majoring in Communication and minoring in digital media design. I am on the schools volleyball team. I am trying to pursue a job in journalism.</p>
-  </div>
+    <p id="Demo" class="background-switch">    I am a senior at Lake Forest College and am majoring in Communication and minoring in digital media design. I am on the schools volleyball team. I am trying to pursue a job in journalism.</p>
 
 
 
   </body>
-  </html>
 
 
   <script>
@@ -111,34 +105,29 @@
       }
   }
   </script>
-      <div class="w3-content w3-section" style="max-width:500px">
-          <div class="w3-border w3-border-pink w3-hover-border-grey">
+      <div style="max-width:700px">
+          <div class="no">
       <p><b>About Me</b></p>
 
-    <img class="mySlides w3-animate-fading" src="artphoto1.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="artphoto2.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="artphoto3.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="artphoto4.jpg" style="width:100%">
+    <img class="mySlides" src="artphoto1.jpg" style="width:100%">
+    <img class="mySlides" src="artphoto2.jpg" style="width:100%">
+    <img class="mySlides" src="artphoto3.jpg" style="width:100%">
+    <img class="mySlides" src="artphoto4.jpg" style="width:100%">
   </div>
       </div>
 
-      <div class="w3-panel w3-leftbar w3-pink">
-         <div class="w3-topbar w3-bottombar w3-border-pink w3-pale-red">
-    <p class="w3-xxlarge w3-serif">
-    <i>"If you see it. You can do it."</i></p>
+    <div class="background-switch"style="max-width:700px">
+    <b>"If you see it. You can do it."</b>
     <p>-Maxie Mottlowitz</p>
   </div>
+     
 
-      </div>
-        <div class="w3-panel w3-leftbar w3-Pink">
-             <div class="w3-topbar w3-bottombar w3-border-pink w3-pale-red">
-    <p class="w3-xxlarge w3-serif">
-    <i>"Think the impossible."</i></p>
+              <div class="background-switch" style="max-width:700px">
+    <b>"Think the impossible."</b>
     <p>-Maxie Mottlowitz</p>
 
   </div>
-      </div>
-
+  
 
   <script>
   var myIndex = 0;
@@ -155,49 +144,9 @@
       x[myIndex-1].style.display = "block";
       setTimeout(carousel, 9000);
   }
-
-
-  </script>
-  <script>
-    var x = 50,
-      y = 50,
-      angle1 = 0.0,
-      segLength = 50;
-
-
-    function setup() {
-  createCanvas(2000,200);
-      strokeWeight(20.0);
-      stroke(255, 100);
-
-    }
-
-    function draw() {
-      background(20,20,10,0);
-
-
-      dx = mouseX - x;
-      dy = mouseY - y;
-      angle1 = atan2(dy, dx);
-      x = mouseX - (cos(angle1) * segLength);
-      y = mouseY - (sin(angle1) * segLength);
-
-      ellipse(x, y, 25, 25);
-    }
-
-    function segment(x, y, a) {
-      push();
-      translate(x, y);
-      rotate(a);
-      line(0, 0, segLength, 0);
-      pop();
-    }
-
-  </script>
-<script>
-
 </script>
-<h2>Contact Me</h2>
+
+<div class="h2" style="max-width:700px"> <h2>Contact Me</h2>
 
 <form action="mailto:132mottlowitzmk@gmail.com" method="post" enctype="text/plain">
 Name:<br>
