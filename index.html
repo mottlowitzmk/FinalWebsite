@@ -70,23 +70,18 @@
 Welcome!
 </h1>
   <div class="hi">
-       <ul>
-    <li><a class="hi" href="www.google.com">Home</a></li>
-    <p>
-    <li><a class="hi" href="www.google.com">Family</a></li>
-    <p>
-    <li><a class="hi" href="www.google.com">Friends</a></li>
-    <p>
-    <li><a class="hi" href="www.google.com">Hobbies</a></li>
-
-  </ul>
-
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
 
   </div>
-
-
+<div>
     <p>  </p>
     <p id="Demo" class="background-switch">    I am a senior at Lake Forest College and am majoring in Communication and minoring in digital media design. I am on the schools volleyball team. I am trying to pursue a job in journalism.</p>
+  </div>
 
 
 
@@ -109,25 +104,27 @@ Welcome!
           <div class="no">
       <p><b>About Me</b></p>
 
-    <img class="mySlides" src="artphoto1.jpg" style="width:100%">
-    <img class="mySlides" src="artphoto2.jpg" style="width:100%">
-    <img class="mySlides" src="artphoto3.jpg" style="width:100%">
-    <img class="mySlides" src="artphoto4.jpg" style="width:100%">
+    <img class="mySlides1" src="artphoto1.jpg" style="width:100%">
+    <img class="mySlides1" src="artphoto2.jpg" style="width:100%">
+    <img class="mySlides1" src="artphoto3.jpg" style="width:100%">
+    <img class="mySlides1" src="artphoto4.jpg" style="width:100%">
   </div>
       </div>
 
     <div class="background-switch"style="max-width:700px">
-    <b>"If you see it. You can do it."</b>
+    <p><b>"If you see it. You can do it."</b></p>
     <p>-Maxie Mottlowitz</p>
   </div>
-     
+    
 
               <div class="background-switch" style="max-width:700px">
-    <b>"Think the impossible."</b>
+    <b>"Think the impossible."</b></p>
     <p>-Maxie Mottlowitz</p>
 
   </div>
-  
+ 
+    
+
 
   <script>
   var myIndex = 0;
@@ -135,20 +132,20 @@ Welcome!
 
   function carousel() {
       var i;
-      var x = document.getElementsByClassName("mySlides");
+      var x = document.getElementsByClassName("mySlides1");
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";
       }
       myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
+      if (myIndex > x.length) {myIndex = .75}
       x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 9000);
+      setTimeout(carousel, 2500);
   }
 </script>
 
 <div class="h2" style="max-width:700px"> <h2>Contact Me</h2>
 
-<form action="mailto:132mottlowitzmk@gmail.com" method="post" enctype="text/plain">
+<h2> <form action="mailto:132mottlowitzmk@gmail.com" method="post" enctype="text/plain">
 Name:<br>
 <input type="text" name="name"><br>
 E-mail:<br>
@@ -156,5 +153,5 @@ E-mail:<br>
 Comment:<br>
 <input type="text" name="comment" size="50"><br><br>
 <input type="submit" value="Send">
-<input type="reset" value="Reset">
+<input type="reset" value="Reset"> <h2>
 </form>
